@@ -3,11 +3,9 @@ package com.cl.proficiencytest.presenter;
 import com.cl.proficiencytest.base.BasePresenterImpl;
 import com.cl.proficiencytest.contract.MainContract;
 import com.cl.proficiencytest.model.Item;
-import com.cl.proficiencytest.model.Row;
+
 import com.cl.proficiencytest.net.ExceptionHelper;
 import com.cl.proficiencytest.net.api.Api;
-
-import java.util.List;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;
@@ -25,6 +23,7 @@ public class MainPresenter extends BasePresenterImpl<MainContract.view>
     public MainPresenter(MainContract.view view) {
         super(view);
     }
+
 
     @Override
     public void getData() {
